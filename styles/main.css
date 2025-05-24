@@ -1,0 +1,61 @@
+@import url('./header.css');
+@import url('./greeting.css');
+@import url('./skills.css');
+@import url('./topButton.css');
+
+:root {
+    --text-color: #333;
+    --body-bg: #fff;
+    --secondary-text: #666;
+    --highlight: #A6E1FA;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+/* Animation Classes */
+.section-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease-out;
+}
+
+.section-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Animation Directions */
+.fade-up {
+    transform: translateY(20px);
+}
+
+.fade-down {
+    transform: translateY(-20px);
+}
+
+.fade-left {
+    transform: translateX(-20px);
+}
+
+.fade-right {
+    transform: translateX(20px);
+}
+
+.section-visible.fade-up,
+.section-visible.fade-down,
+.section-visible.fade-left,
+.section-visible.fade-right {
+    transform: translate(0);
+}
+
+/* Smooth transitions for elements */
+.greet-main,
+.skills-header-div,
+.skills-main-div,
+.header {
+    transition: all 0.6s cubic-bezier(0.5, 0, 0, 1);
+}

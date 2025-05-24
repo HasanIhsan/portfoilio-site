@@ -1,0 +1,156 @@
+:root {
+    --text-color: #333;
+    --secondary-text: #666;
+    --body-bg: #fff;
+}
+.skills-svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* For hover effects if needed */
+.skills-svg:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+.skills-main-div {
+    /* Remove any existing transition/animation properties */
+    display: flex;
+    overflow: hidden;
+    margin: 50px 100px;
+    gap: 40px;
+    /* Add base transition */
+    transition: all 1s ease-out;
+}
+.skills-header {
+    font-size: 60px;
+    text-align: center;
+    margin: 50px 0;
+    color: var(--text-color);
+}
+
+.skills-image-div {
+    flex: 1;
+    min-width: 300px;
+    margin-top: 5rem;
+}
+
+ 
+
+.skills-text-div {
+    flex: 1;
+    padding: 20px;
+}
+
+.skills-heading {
+    font-size: 56px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.software-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.skill-icon {
+    font-size: 3rem;
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: translateY(-5px);
+}
+
+.skills-text {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--secondary-text);
+    margin-bottom: 15px;
+}
+
+/* Skill tooltip styling */
+.skill-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--text-color);
+    color: var(--body-bg);
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px;
+    font-family: 'Google Sans Regular';
+}
+
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--text-color) transparent transparent transparent;
+}
+
+.skill-tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
+    color: var(--text-color);
+}
+
+.skill-icon:hover {
+    transform: scale(1.2);
+    color: var(--highlight);
+}
+
+@media (max-width: 768px) {
+    .skills-main-div {
+        flex-direction: column;
+    }
+    
+    .skills-header {
+        font-size: 40px;
+    }
+    
+    .skills-heading {
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .software-skills {
+        justify-content: center;
+    }
+    
+    .skills-text {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+ 

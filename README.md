@@ -2,8 +2,8 @@
 # Portfolio Site
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/username/repo)](https://github.com/username/repo/issues)
-[![GitHub stars](https://img.shields.io/github/stars/username/repo)](https://github.com/username/repo/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/HasanIhsan/portfoilio-site)](https://github.com/HasanIhsan/portfoilio-site/issues)
+[![GitHub stars](https://img.shields.io/github/stars/HasanIhsan/portfoilio-site)](https://github.com/HasanIhsan/portfoilio-site/stargazers)
 
 ## Description
 

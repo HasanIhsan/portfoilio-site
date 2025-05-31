@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Portfolio Site
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -51,4 +51,4 @@ This project is licensed under the MIT License(LICENSE) - see the LICENSE file f
  ashutosh1919 : for the original portfolio
 =======
 # portfoilio-site
->>>>>>> 9b613dd (update: education Page (git from WSL))
+

@@ -8,6 +8,11 @@
     --body-bg: #fff;
     --secondary-text: #666;
     --highlight: #A6E1FA;
+    --border-color: #d9dbdf;
+    --shadow-color: #d9dbdf;
+    --card-bg: #ffffff;
+    --header-bg: #f5f5f5;
+    --header-hover: #e0e0e0;
 }
 
 body {

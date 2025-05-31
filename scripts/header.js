@@ -41,7 +41,7 @@ export function loadHeader() {
 function createMenuItems(theme) {
     const menuItems = [
         { path: '/index', text: 'Home' },
-        { path: '/education', text: 'Education' },
+        { path: '/pages/education', text: 'Education' },
         { path: '/experience', text: 'Experience' },
         { path: '/projects', text: 'Projects' },
         { path: '/opensource', text: 'Open Source' },

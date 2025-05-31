@@ -2,6 +2,9 @@ import { createScrollObserver } from './observers.js';
 
 export function loadGreeting() {
     const greetingSection = document.getElementById('greeting');
+
+    if(!greetingSection) return; // Ensure the section exists
+
     greetingSection.innerHTML = `
         <div class="greet-main section-hidden fade-up">
             <div class="greeting-main">

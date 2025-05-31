@@ -48,7 +48,6 @@ This project is licensed under the MIT License(LICENSE) - see the LICENSE file f
 >aka free todo whatever you want
 
 ## Credits
- ashutosh1919 : for the original portfolio
-=======
-# portfoilio-site
+ashutosh1919 : for the original portfolio
+
 

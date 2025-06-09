@@ -42,7 +42,7 @@ function createMenuItems(theme) {
     const menuItems = [
         { path: '/index', text: 'Home' },
         { path: '/pages/education', text: 'Education' },
-        { path: '/experience', text: 'Experience' },
+        { path: '/pages/experience', text: 'Experience' },
         { path: '/projects', text: 'Projects' },
         { path: '/opensource', text: 'Open Source' },
         { path: '/contact', text: 'Contact Me' }

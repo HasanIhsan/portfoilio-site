@@ -1,0 +1,349 @@
+
+:root {
+    --text-color: #333;
+    --body-bg: #fff;
+    --secondary-text: #666;
+    --highlight: #A6E1FA;
+    --border-color: #d9dbdf;
+    --shadow-color: #d9dbdf;
+    --card-bg: #ffffff;
+    --header-bg: #f5f5f5;
+    --header-hover: #e0e0e0;
+    --header-color: #4a4a4a;
+}
+
+.experience-main {
+  width: 100%;
+}
+
+.basic-experience {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.experience-heading-div {
+  display: flex;
+  margin-top: 80px;
+}
+
+.experience-heading-div > * {
+  flex: 1;
+}
+
+.experience-heading-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-heading-text-div {
+  text-align: center;
+}
+
+.experience-heading-img-div > * {
+  max-width: 100%;
+  height: auto;
+}
+
+.experience-heading-text {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.experience-heading-sub-text {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.experience-header-detail-text {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.experience-accord {
+  margin: 50px;
+}
+
+.accord-panel {
+  font-family: "Google Sans Regular";
+}
+
+.accordion-header {
+  background-color: var(--body-bg);
+  border: 1px solid var(--header-color);
+  border-radius: 5px;
+  margin-bottom: 3px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+  color: var(--secondary-text);
+}
+
+.accordion-content {
+  background-color: var(--body-bg);
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: none;
+}
+
+.accordion-content.active {
+  display: block;
+}
+
+.experience-card {
+  min-width: 350px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-left: 10px;
+  box-shadow: 4px 3px 20px -2px rgba(128, 128, 128, 0.3);
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  z-index: 100;
+}
+
+.experience-card-logo-div {
+  margin: 10px;
+  margin-top: -10px;
+}
+
+/* Stepper container - maintains spacing */
+.experience-card-stepper {
+    position: relative;
+    width: 20px;
+}
+
+/* Stepper dot */
+.stepper-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    z-index: 2;
+}
+
+/* Stepper line */
+.stepper-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #ccc;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Hide top part of line for first item */
+.stepper-line.hide-top {
+    top: 50%;
+}
+
+/* Hide bottom part of line for last item */
+.stepper-line.hide-bottom {
+    bottom: 50%;
+}
+
+.experience-card-logo {
+  width: 100px;
+  height: 100px;
+  box-shadow: 4px 3px 20px -2px rgba(128, 128, 128, 0.3);
+  border-radius: 50px;
+}
+
+.experience-card-title {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  margin-left: 0px;
+  margin-right: 7px;
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.experience-card-company {
+  margin: 0;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.experience-card-company a {
+  position: relative;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.experience-card-company a:hover {
+  color: var(--text);
+}
+
+.experience-card-company a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--text);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.experience-card-company a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.experience-card-duration {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: right;
+  color: var(--secondary-text);
+}
+
+.experience-card-heading-right {
+  float: right;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.experience-card-location {
+  margin: 0;
+  text-align: right;
+  color: var(--secondary-text);
+}
+
+.experience-card-description {
+  margin-top: 5px;
+  margin-left: 10px;
+  text-align: justify;
+  margin-right: 20px;
+}
+
+.experience-list-item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.stepper-dot {
+  width: 20px;
+  height: 20px;
+  background-color: var(--header-color);
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.stepper-line {
+  height: 190px;
+  width: 2px;
+  background-color: var(--header-color);
+  position: absolute;
+  margin-top: 20px;
+}
+
+@media (max-width: 1380px) {
+  .experience-heading-text {
+    font-size: 50px;
+    margin-top: 80px;
+  }
+  .experience-heading-sub-text {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-heading-text {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .experience-heading-sub-text {
+    font-size: 20px;
+  }
+
+  .experience-heading-div {
+    flex-direction: column;
+  }
+
+  .experience-header-detail-text {
+    font-size: 16px;
+    margin-right: 0px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .experience-accord {
+    margin: 20px;
+  }
+
+  .experience-card {
+    flex-direction: column;
+    text-align: center;
+    min-width: auto;
+  }
+
+  .arrow-left {
+    display: none;
+  }
+
+  .experience-card-stepper {
+    display: none;
+  }
+
+  .experience-list-item {
+    flex-direction: column;
+  }
+
+  .experience-card-logo {
+    width: 100px;
+  }
+
+  .experience-card-header-div {
+    flex-direction: column;
+  }
+
+  .experience-card-title, 
+  .experience-card-company,
+  .experience-card-duration,
+  .experience-card-location {
+    text-align: center;
+  }
+
+  .experience-card-description {
+    margin-left: 14px;
+    margin-right: 14px;
+    text-align: justify;
+  }
+}
